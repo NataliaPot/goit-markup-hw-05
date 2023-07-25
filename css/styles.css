@@ -940,7 +940,6 @@ input {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     color: var(--white);
-    line-height: 1.5;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
