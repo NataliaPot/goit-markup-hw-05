@@ -530,6 +530,7 @@ input {
 
 .footer-form {
     display: flex;
+    gap: 24px;
 }
 
 .footer-label {
@@ -549,7 +550,6 @@ input {
     width: 264px;
     border-radius: 4px;
     border: 1px solid var(--white);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
     padding-left: 16px;
     height: 40px;
@@ -557,6 +557,7 @@ input {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-input::placeholder {
@@ -580,8 +581,7 @@ input {
     font-family: inherit;
     border: none;
     border-radius: 4px;
-    min-width: 169px;
-    margin-left: 24px;
+    min-width: 165px;
     transition: background-color 250ms var(--transition);
     display: flex;
     justify-content: center;
@@ -872,9 +872,7 @@ input {
 }
 
 .form-textarea {
-    padding-top: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 8px 16px;
     resize: none;
     font-size: 12px;
     line-height: 1.17;
@@ -895,19 +893,6 @@ input {
 
 .check {
     margin-bottom: 24px;
-}
-
-.checkbox-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 .accept-text {
@@ -955,7 +940,7 @@ input {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     color: var(--white);
-    font-family: Roboto;
+    line-height: 1.5;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -963,6 +948,7 @@ input {
     letter-spacing: 0.04em;
     height: 56px;
     transition: background-color 250ms var(--transition);
+    cursor: pointer;
 }
 
 .form-button:hover,
