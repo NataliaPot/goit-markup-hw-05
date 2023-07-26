@@ -913,8 +913,13 @@ input {
     margin-right: 8px;
     fill: transparent;
     transition: background-color 250ms var(--transition),
-        border 250ms var(--transition),
+        border 250ms var(--transition), border-color 250ms var(--transition),
         fill 250ms var(--transition);
+}
+
+
+.input-check:focus+.accept-text .check-span {
+    border-color: var(--ocean);
 }
 
 
@@ -923,6 +928,8 @@ input {
     border: none;
     fill: var(--cloud);
 }
+
+
 
 .link-modal {
     color: var(--iris);
